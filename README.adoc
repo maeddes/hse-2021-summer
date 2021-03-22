@@ -20,3 +20,4 @@ _The student is able to describe cloud computing in own words and list examples 
 
  * https://landscape.cncf.io/
  * https://www.cncf.io/wp-content/uploads/2020/11/CNCF_Survey_Report_2020.pdf
+ * https://csrc.nist.gov/publications/detail/sp/800-145/final
