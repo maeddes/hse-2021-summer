@@ -44,8 +44,10 @@ _The student is able to build and configure an own Spring Boot application from 
 
 === Links
 
+* https://spring.io/
 * https://start.spring.io/
 * https://spring.io/guides/
 * https://www.baeldung.com/spring-boot/
 
-* https://spring.io/
+* https://spring.io/tools
+
