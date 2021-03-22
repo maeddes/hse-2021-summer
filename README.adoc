@@ -52,4 +52,7 @@ image::pics/spring_boot_intro.png[Spring Boot Introduction]
 * https://www.baeldung.com/spring-boot/
 
 * https://spring.io/tools
+* https://www.jetbrains.com/idea/
+* https://code.visualstudio.com/docs/java/java-tutorial
+* https://marketplace.visualstudio.com/items?itemName=Pivotal.vscode-boot-dev-pack
 
