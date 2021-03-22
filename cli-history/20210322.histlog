@@ -1,0 +1,53 @@
+git clone https://github.com/maeddes/hse-2021-summer.git
+10129  cd hse-2021-summer
+10130  ls
+10131  mkdir code
+10132  cd code
+10133  cp ~/Desktop/HSEHelloWorld.zip .
+10134  unzip HSEHelloWorld.zip
+10135  ls
+10136  rm HSEHelloWorld
+10137  rm HSEHelloWorld.zip
+10138  cd HSEHelloWorld
+10139  ls
+10140  mvn spring-boot:run
+10141  code .
+10142  mvn spring-boot:run
+10143  ls
+10144  ls target
+10145  mvn clean package
+10146  ls
+10147  ls target
+10148  java -jar target/HSEHelloWorld-0.0.1-SNAPSHOT.jar
+10149  mvn dependency:tree
+10150  java -jar target/HSEHelloWorld-0.0.1-SNAPSHOT.jar
+10151  mvn spring-boot:run
+10152  mvn clean package
+10153  java -jar target/HSEHelloWorld-0.0.1-SNAPSHOT.jar
+10154  mvn spring-boot:run
+10155* curl
+10156* httpie
+10157* curl localhost:8080
+10158* curl localhost:8080/postSomething/test
+10159* curl -X POST localhost:8080/postSomething/test
+10160* curl -X POST localhost:8080/postSomething/hola
+10161  mvn spring-boot:run
+10162* curl localhost:8080
+10163* curl -X POST localhost:8080/postSomething/stateful
+10164* mvn spring-boot:run
+10165* SERVER_PORT=8082 mvn spring-boot:run
+10166* curl -X POST localhost:8082/postSomething/app-3
+10167* exit
+10168  ls
+10169  cd ..
+10170  git pull
+10171  git status
+10172  cd ..
+10173  git status
+10174  git add .
+10175  git status
+10176  git commit -m "Hello World code"
+10177  git push origin main
+10178  ls
+10179  mkdir cli-history
+10180  cd cli-history
