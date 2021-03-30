@@ -1,0 +1,39 @@
+10066  cd hft-2020
+10067  git pull
+10068  clear
+10069  ls
+10070  pwd
+10071  cd git/wip
+10072  ls
+10073  cd hse-2021-summer
+10074  git pull
+10075  git status
+10076  git add .
+10077  git commit -m "Big Picture"
+10078  git push origin main
+10079  ls
+10080  mv CRUDController.zip code
+10081  cd code
+10082  ls
+10083  unzip CRUDController.zip
+10084  cd CRUDController
+10085  code .
+10086  mvn spring-boot:run
+10087  curl -X POST localhost:8080/strings/hello
+10088  curl -X POST localhost:8080/strings/wow
+10089  curl -X POST localhost:8080/strings/awesome
+10090  mvn spring-boot:run
+10091  curl -X POST localhost:8080/strings/hello
+10092  curl -X POST localhost:8080/strings/wow
+10093  curl localhost:8080/strings
+10094  curl -X POST localhost:8080/strings/awesome
+10095  curl localhost:8080/strings
+10096  while true; do curl localhost:8080/strings;sleep 1; echo; done
+10097* curl -X POST localhost:8080/strings/watch_the_loop
+10098* curl -X DELETE localhost:8080/strings/watch_the_loop
+10099* curl localhost:8080/strings
+10100* curl -X DELETE localhost:8080/strings/hello
+10101* mvn spring-boot:run
+10102* curl -X POST localhost:8080/strings/hello
+10103* curl -X POST localhost:8080/strings/awesome
+10104* curl -X POST localhost:8080/strings/wow
