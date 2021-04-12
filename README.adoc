@@ -56,3 +56,13 @@ image::pics/spring_boot_intro.png[Spring Boot Introduction]
 * https://code.visualstudio.com/docs/java/java-tutorial
 * https://marketplace.visualstudio.com/items?itemName=Pivotal.vscode-boot-dev-pack
 
+== Module: Spring Boot Next Steps
+
+* Recap of Spring Boot Intro Module
+* Live coding of Controller with CRUD endpoints
+* Using Logger with SL4J
+* Interacting with the application through REST Clients
+* Demonstrate dynamic behaviour
+* Outlook: "Big picture" of lecture
+
+
