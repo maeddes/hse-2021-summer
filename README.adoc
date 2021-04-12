@@ -67,6 +67,8 @@ image::pics/spring_boot_intro.png[Spring Boot Introduction]
 
 == Module: Docker Intro
 
+image::pics/big_picture.png[Big Pciture]
+
 === Links
 
 * https://labs.play-with-docker.com/
