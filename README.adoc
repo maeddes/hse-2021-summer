@@ -65,4 +65,9 @@ image::pics/spring_boot_intro.png[Spring Boot Introduction]
 * Demonstrate dynamic behaviour
 * Outlook: "Big picture" of lecture
 
+== Module: Docker Intro
 
+=== Links
+
+* https://labs.play-with-docker.com/
+* https://katacoda.com/
