@@ -1,0 +1,171 @@
+10026  cd hse-2021-summer
+10027  git pull
+10028  ls
+10029  cd code
+10030  ls
+10031  cd CRUDController
+10032  mvn spring-boot:run
+10033  docker run -d -p 8080:8080 -e PROPERTY=Stuttgart --name base_container novatec/technologyconsulting-hello-container:v0.1
+10034  docker ps -a
+10035  docker rm $(docker ps -aq)
+10036  docker ps -a
+10037  docker run -d -p 8080:8080 -e PROPERTY=Stuttgart --name base_container novatec/technologyconsulting-hello-container:v0.1
+10038  curl localhost:8080/hello
+10039  docker ps --no-trunc
+10040  docker container inspect base_container
+10041  docker exec
+10042  docker exec base_container env
+10043  docker exec base_container /bin/bash
+10044  docker exec -it base_container /bin/bash
+10045  whoami
+10046  echo "new external stuff" >> message
+10047  bat message
+10048  docker cp message base_container:/work
+10049  docker exec -it base_container /bin/bash
+10050  docker stop base_container
+10051  docker ps
+10052  docker ps -a
+10053  docker start base_container
+10054  docker exec -it base_container /bin/bash
+10055  docker commit base_container maeddes/hello-container:v0.2
+10056  docker images
+10057  docker run -d -p 8080:8080 -e PROPERTY=Stuttgart --name new_base_container maeddes/hello-container:v0.2
+10058  docker ps
+10059  docker run -d -p 8081:8080 -e PROPERTY=Stuttgart --name new_base_container maeddes/hello-container:v0.2
+10060  docker rm new_base_container
+10061  docker run -d -p 8081:8080 -e PROPERTY=Stuttgart --name new_base_container maeddes/hello-container:v0.2
+10062  docker ps
+10063  docker exec -it new_base_container /bin/bash
+10064  mvn clean package
+10065  docker run -it ubuntu:20.10 /bin/bash
+10066* ping www.google.de
+10067* exit
+10068  docker commit $(docker ps -lq) maeddes/java-base:v1
+10069  docker history maeddes/java-base:v1
+10070  dive maeddes/java-base:v1
+10071  docker images
+10072  docker run maeddes/java-base:v1
+10073  docker ps
+10074  docker cp -a
+10075  docker ps -a
+10076  mvn clean package
+10077  cd ..
+10078  code .
+10079  cd HSEHelloWorld
+10080  mvn clean package
+10081  docker cp target/HSEHelloWorld-0.0.1-SNAPSHOT.jar $(docker ps -lq):/opt/app.jar
+10082  docker images
+10083  docker ps -a
+10084  docker commit --change='CMD ["java","-jar","/opt/app.jar"]' $(docker ps -lq) maeddes/java-app:v1
+10085  docker images
+10086  dive maeddes/java-app:v1
+10087  docker run -p 8080:8080 maeddes/java-app:v1
+10088  docker run -p 8082:8080 maeddes/java-app:v1
+10089  docker rm $(docker ps -aq)
+10090  docker ps
+10091  docker stop 9fe 3f6
+10092  docker rm $(docker ps -aq)
+10093  docker ps -a
+10094  docker run -p 8081:8081 maeddes/java-app:v1
+10095  ls
+10096  bat Dockerfile
+10097  docker build -t maeddes/java-app:dockerfile
+10098  docker build -t maeddes/java-app:dockerfile .
+10099  export DOCKER_BUILDKIT=0
+10100  clear
+10101  docker build -t maeddes/java-app:dockerfile .
+10102  docker images
+10103  cat Dockerfile
+10104  docker build -f Dockerfile-jre11-slim -t maeddes/java-app:dockerfile-jre11-slim .
+10105  docker images
+10106  docker history maeddes/java-app:dockerfile-jre11-slim
+10107  docker ps
+10108  docker run -p 8081:8081 maeddes/java-app:dockerfile-jre11-slim
+10109  ls
+10110  docker ps
+10111  docker rm $(docker ps -aq)
+10112  docker build -f Dockerfile-multistage -t maeddes:java-app:mulitstage
+10113  docker build -f Dockerfile-multistage -t maeddes/java-app:mulitstage
+10114  docker build -f Dockerfile-multistage -t maeddes/java-app:multistage .
+10115  ls
+10116  docker image
+10117  docker images
+10118  docker ps
+10119  docker ps -a
+10120  docker start c45
+10121  docker ps
+10122  docker logs c45
+10123  docker ps
+10124  docker build -f Dockerfile-multistage -t maeddes/java-app:multistage .
+10125  mvn -f pom.xml clean package
+10126  cd ..
+10127  ls
+10128  cd ..
+10129  cd options-galore-container-build
+10130  ls
+10131  cd java
+10132  ls
+10133  docker build -f Dockerfile-multistage -t maeddes/java-app:multistage .
+10134  export DOCKER_BUILDKIT=1
+10135  docker build -f Dockerfile-multistage -t maeddes/java-app:multistage .
+10136  docker run -it maven:3.6.3-jdk-11 /bin/bash
+10137* CD ..
+10138* cd ..
+10139* cd hse-2021-summer
+10140* ls
+10141* cd code
+10142* ls
+10143* cd HSEHelloWorld
+10144* ls
+10145* docker exec 3d9 mkdir -p /opt/app/src
+10146* docker cp -r src 3d9:/opt/app/src
+10147* docker cp src 3d9:/opt/app/src
+10148* docker cp pom.xml 3d9:/opt/app
+10149* docker exec -it 3d9 /bin/bash
+10150  ping www.google.de
+10151  docker exec -it 3d9 /bin/bash
+10152  docker build -f Dockerfile-multistage -t maeddes/java-app:multistage .
+10153  ping www.google.de
+10154  cd ..
+10155  ping www.google.de
+10156  export DOCKER_BUILDKIT=0
+10157  docker build -f Dockerfile-multistage -t maeddes/java-app:multistage .
+10158  ls
+10159  cd ..
+10160  cd hse-2021-summer
+10161  ls
+10162  cd code
+10163  ls
+10164  cd HSEHelloWorld
+10165  ls
+10166  docker build -f Dockerfile-multistage -t maeddes/java-app:multistage .
+10167  docker images
+10168  docker rmi 97d 667 c2a
+10169  docker images
+10170  export DOCKER_BUILDKIT=1
+10171  docker build -f Dockerfile-multistage -t maeddes/java-app:multistage .
+10172  docker build -f Dockerfile-multistage-experimental -t maeddes/java-app:multistage-experimental .
+10173  mvn compile com.google.cloud.tools:jib-maven-plugin:3.0.0:build -Dimage=maeddes/java-app:jib
+10174  mvn compile com.google.cloud.tools:jib-maven-plugin:3.0.0:buildDocker -Dimage=maeddes/java-app:jib
+10175  mvn compile com.google.cloud.tools:jib-maven-plugin:3.0.0:dockerBuild -Dimage=maeddes/java-app:jib
+10176  mvn compile com.google.cloud.tools:jib-maven-plugin:3.0.0:build -Dimage=maeddes/java-app:jib
+10177  docker images
+10178  mvn compile com.google.cloud.tools:jib-maven-plugin:3.0.0:dockerBuild -Dimage=maeddes/java-app:jib
+10179  docker images
+10180  docker rmi 154 2d3
+10181  docker images
+10182  mvn compile com.google.cloud.tools:jib-maven-plugin:3.0.0:dockerBuild -Dimage=maeddes/java-app:jib
+10183  docker images
+10184  docker build -f Dockerfile-jre11-slim -t maeddes/java-app:dockerfile-jre11-slim .
+10185  docker images
+10186  mvn compile com.google.cloud.tools:jib-maven-plugin:3.0.0:dockerBuild -Dimage=maeddes/java-app:jib
+10187  docker images
+10188  154ad9ea135c
+10189  docker rm 154ad9ea135c
+10190  docker rmi 154ad9ea135c
+10191  mvn compile com.google.cloud.tools:jib-maven-plugin:3.0.0:dockerBuild -Dimage=maeddes/java-app:jib#
+10192  mvn compile com.google.cloud.tools:jib-maven-plugin:3.0.0:dockerBuild -Dimage=maeddes/java-app:jibb#
+10193  mvn compile com.google.cloud.tools:jib-maven-plugin:3.0.0:dockerBuild -Dimage=maeddes/java-app:jin
+10194  docker images
+10195  ls
+10196  mvn spring-boot:build-image -Dspring-boot.build-image.imageName=maeddes/java-app:paketo

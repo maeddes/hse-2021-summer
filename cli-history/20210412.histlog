@@ -1,0 +1,43 @@
+docker
+ 9898  docker -v
+ 9899  docker info
+ 9900  docker container
+ 9901  docker image
+ 9902  docker image ls
+ 9903  docker run novatec/technologyconsulting-hello-container:v0.1
+ 9904  docker container ps
+ 9905  docker container ps -a
+ 9906  docker logs eager_curran
+ 9907  docker logs 92f
+ 9908  docker run -d -p 8080:8080 novatec/technologyconsulting-hello-container:v0.1
+ 9909  curl localhost:8080
+ 9910  docker run -d -p 8080:8080 -e PROPERTY=HSE novatec/technologyconsulting-hello-container:v0.1
+ 9911  docker run -d novatec/technologyconsulting-hello-container:v0.1
+ 9912  curl localhost:8081/hello
+ 9913  curl localhost:8082/hello
+ 9914  docker ps -aq
+ 9915  docker ps --format "{{.ID}} {{.Ports}}"
+ 9916  docker ps --format "{{.ID}} {{.Ports}}"{{.Name}}
+ 9917  docker run -d -p 8083:8080 -e PROPERTY=HSE novatec/technologyconsulting-hello-container:v0.1 -name my_container
+ 9918  docker run -d -p 8083:8080 -e PROPERTY=HSE novatec/technologyconsulting-hello-container:v0.1 --name my_container
+ 9919  docker run -d -p 8083:8080 -e PROPERTY=HSE --name=mycontainer novatec/technologyconsulting-hello-container:v0.1
+ 9920  docker ps --format "{{.ID}} {{.Ports}}"{{.Names}}
+ 9921  docker stop mycontainer
+ 9922  docker rm container
+ 9923  docker stop e5b
+ 9924  docker rm e5b
+ 9925  docker ps -q | xargs docker stop
+ 9926  docker ps -a
+ 9927  docker ps -a -q | xargs docker rm\n
+ 9928  docker ps
+ 9929  docker run -d -p 8081:8080 -e PROPERTY=HSE novatec/technologyconsulting-hello-container:v0.1
+ 9930  docker run -d -p 8082:8080 -e PROPERTY=HSE novatec/technologyconsulting-hello-container:v0.1
+ 9931  docker ps -q
+ 9932  echo $(docker ps -q)
+ 9933  docker stop $(docker ps -q)
+ 9934  docker rm $(docker ps -q)
+ 9935  docker rm $(docker ps -aq)
+ 9936  cd hse-2021-summer
+ 9937  ls -ltr
+ 9938  docker run -d -p 8080:8080 -e PROPERTY=Stuttgart --name base_container novatec/technologyconsulting-hello-container:v0.1
+ 9939  curl localhost:8080/hello
