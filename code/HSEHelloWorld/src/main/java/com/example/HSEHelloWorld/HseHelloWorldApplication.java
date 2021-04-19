@@ -21,9 +21,9 @@ public class HseHelloWorldApplication {
 	}	
 
 	@GetMapping("/otherEndpoint")
-	public String sayHelloAgain(){
+	public String sayHelloAgainAndAgain(){
 
-		return "Hallo Esslingen, Summer Semester 2021 (new feature)";
+		return "Hallo Esslingen, Summer Semester 2021 (very new feature)";
 
 	}
 
