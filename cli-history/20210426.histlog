@@ -1,0 +1,78 @@
+cd hse-2021-summer
+10415  clear
+10416  ls
+10417  git pull
+10418  code .
+10419  ls
+10420  mkdir tmp
+10421  cp ~/persistenceExample.zip .
+10422  mv persistenceExample.zip tmp
+10423  cd tmp
+10424  unzip persistenceExample.zip
+10425  exit
+10426  mvn spring-boot:run
+10427  java -version
+10428  mvn clean install
+10429  ls
+10430  cd persistenceExample
+10431  ls
+10432  mvn clean install
+10433  cd ..
+10434  ls
+10435  rm -rf persistenceExample
+10436  mv ~/persistenceExample.zip .
+10437  ls
+10438  unzip persistenceExample.zip
+10439  cd persistenceExample
+10440  mvn clean install+
+10441  mvn clean install
+10442  mvn spring-boot:run
+10443  docker run --name postgresdb -p 5432:5432 -e POSTGRES_PASSWORD=password -e POSTGRES_USER=matthias -e POSTGRES_DB=mydb -d postgres:latest
+10444  docker ps
+10445  docker logs 7ed
+10446  mvn spring-boot:run
+10447  SPRING_PROFILES_ACTIVE=postgres mvn spring-boot:run
+10448  ls
+10449  code .
+10450  cd ..
+10451  cd code
+10452  ls
+10453  cd CRUDController
+10454  code .
+10455  cd ..
+10456  cd tmp
+10457  ls
+10458  cd persistenceExample
+10459  ls
+10460  mvn clean install
+10461  mvn spring-boot:run
+10462  curl localhost:8080/strings
+10463  mvn spring-boot:run
+10464  mvn clean install
+10465  java -jar target/persistenceExample-0.0.1-SNAPSHOT.jar
+10466  curl localhost:8080/strings
+10467  curl -X POST localhost:8080/strings/wow
+10468  curl localhost:8080/strings
+10469  java -jar target/persistenceExample-0.0.1-SNAPSHOT.jar
+10470  curl -X POST localhost:8080/strings/wow
+10471  curl localhost:8080/strings
+10472  curl -X POST localhost:8080/strings/wow
+10473  curl localhost:8080/strings
+10474  java -jar target/persistenceExample-0.0.1-SNAPSHOT.jar
+10475  curl localhost:8080/strings
+10476  SPRING_PROFILES_ACTIVE=postgres mvn spring-boot:run
+10477  curl localhost:8080/strings
+10478  SPRING_PROFILES_ACTIVE=postgres mvn spring-boot:run
+10479  curl localhost:8080/strings
+10480  curl -X POST localhost:8080/strings/wow
+10481  curl localhost:8080/strings
+10482  curl -X POST localhost:8080/strings/now
+10483  curl -X POST localhost:8080/strings/cow
+10484  curl localhost:8080/strings
+10485  SPRING_PROFILES_ACTIVE=postgres mvn spring-boot:run
+10486  curl localhost:8080/strings
+10487  java -jar target/persistenceExample-0.0.1-SNAPSHOT.jar
+10488  curl localhost:8080/strings
+10489  SPRING_PROFILES_ACTIVE=postgres mvn spring-boot:run
+10490  curl localhost:8080/strings
+10491  docker ps
