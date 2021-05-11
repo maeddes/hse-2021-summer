@@ -135,6 +135,7 @@ _The student understands the concepts of an API and synchronous communication in
 
 === Links
 
+* https://restfulapi.net/idempotent-rest-apis/
 * https://spring.io/guides/gs/consuming-rest/
 * https://www.baeldung.com/rest-template
 * https://spring.io/guides/gs/rest-hateoas/
