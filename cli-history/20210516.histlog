@@ -1,0 +1,85 @@
+11112  cd hse-2021-summer
+11113  ls
+11114  cd code
+11115  ls
+11116  git pull
+11117  git status
+11118  ga .
+11119  git commit -m "props"
+11120  gp origin main
+11121  ls
+11122  cp ~/configserver.zip .
+11123  unzip configserver.zip
+11124  cd configserver
+11125  ls
+11126  mvn spring-boot:run
+11127  ls
+11128  code .
+11129  mvn spring-boot:run
+11130* cd ..
+11131* ls
+11132* cd HSEHelloWorld
+11133* mvn spring-boot:run
+11134* curl localhost:8081/config
+11135* mvn spring-boot:run
+11136* curl localhost:8081/config
+11137  mvn spring-boot:run
+11138* curl localhost:8081/config
+11139* config -X POST localhost:8081/actuator/refresh
+11140* curl -X POST localhost:8081/actuator/refresh
+11141* curl localhost:8081/config
+11142* curl -X POST localhost:8081/actuator/refresh
+11143* curl localhost:8081/config
+11144* mvn spring-boot:run
+11145* curl localhost:8081/config
+11146* mvn spring-boot:run
+11147* curl localhost:8081/config
+11148  mvn spring-boot:run
+11149* curl -X POST localhost:8081/actuator/refresh
+11150* curl localhost:8081/config
+11151* curl -X POST localhost:8081/actuator/refresh
+11152* curl localhost:8081/config
+11153* mvn spring-boot:run
+11154* curl localhost:8081/config
+11155* mvn spring-boot:run
+11156* curl localhost:8081/config
+11157  mvn spring-boot:run
+11158* curl -X POST localhost:8081/actuator/refresh
+11159* curl localhost:8081/config
+11160* curl -X POST localhost:8081/actuator/refresh
+11161* curl localhost:8081/config
+11162* export CONFIG_SOURCE=ENVIRONMENT
+11163* mvn spring-boot:run
+11164* curl localhost:8081/config
+11165  mvn spring-boot:run
+11166* curl -X POST localhost:8081/actuator/refresh
+11167* curl localhost:8081/config
+11168* mvn -Dconfig.source=maven spring-boot:run
+11169* curl localhost:8081/config
+11170* mvn clean package
+11171* java -jar target/HSEHelloWorld-0.0.1-SNAPSHOT.jar --CONFIG_SOURCE=java
+11172* curl localhost:8081/config
+11173* java --help
+11174* java -Dconfig.source=java -jar target/HSEHelloWorld-0.0.1-SNAPSHOT.jar
+11175* curl localhost:8081/config
+11176  mvn spring-boot:run
+11177* java -Dconfig.source=java -jar target/HSEHelloWorld-0.0.1-SNAPSHOT.jar
+11178* curl localhost:8081/config
+11179* zsh
+11180* mvn spring-boot:run
+11181* curl localhost:8081/config
+11182* exit
+11183* echo $CONFIG_SOURCE
+11184* mvn spring-boot:run
+11185* curl localhost:8081/config
+11186* mvn spring-boot:run
+11187* curl localhost:8081/config
+11188* exit
+11189  git status
+11190  cd ..
+11191  ls
+11192  git status
+11193  git add .
+11194  git commit -m "Config Server and Client"
+11195  git push origin main
+11196  git status
