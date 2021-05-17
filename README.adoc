@@ -169,7 +169,7 @@ _The student knows about the evolution of distributed systems and the drivers to
 * Spring Cloud Config Server and Client as reference example for external configuration
 
 === Objectives and exercises
-_The student is able to build a Spring Boot application with various configuration profiles and knows how to set the desired one. It is also required to understand how Spring Boot will prioritize between them, e.g. ("Who wins if multiple are specified?") and what the advantages and drawbacks of them are. The exercise is to implement a Config Server and Config Client set up._
+_The student is able to build a Spring Boot application with various configuration profiles and knows how to set the desired one. It is also required to understand how Spring Boot will prioritize between them, e.g. ("Who wins if multiple are specified?") and what the advantages and drawbacks of them are. The exercise is to implement a Config Server and Config Client set up. Complete the persistence example to support mulitple DBs with profiles._
 
 === Links:
 
