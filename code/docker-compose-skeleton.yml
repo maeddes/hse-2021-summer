@@ -1,0 +1,13 @@
+version: "3.9"  
+services:
+  one:
+    image: image1
+    container_name: container1 #optional
+    ports:
+      - 5000:5000
+    environment:
+      - key=value
+  two:
+    image: image2
+    volumes:
+      - /tmp/data:/var/lib/data
