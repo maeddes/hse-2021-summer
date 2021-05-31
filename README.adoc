@@ -131,7 +131,7 @@ _The student is able to build a Spring Boot application (or extend an existing o
 * Synchronous communication with WebClient, RestTemplate (and Feign)
 
 === Objectives and exercises
-_The student understands the concepts of an API and synchronous communication in distributed systems and can explain it in own words. The exercise is to implement a CRUD application client to work with a REST API using either WebClient, RestTemplate or Feign._
+_The student is able to tell the different options of DDL. The student understands the concepts of an API and synchronous communication in distributed systems and can explain it in own words. The exercise is to implement a CRUD application client to work with a REST API using either WebClient, RestTemplate or Feign._
 
 === Links
 
