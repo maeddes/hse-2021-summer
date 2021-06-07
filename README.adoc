@@ -177,3 +177,10 @@ _The student is able to build a Spring Boot application with various configurati
 * https://docs.spring.io/spring-boot/docs/1.2.3.RELEASE/reference/html/boot-features-external-config.html
 * https://www.baeldung.com/spring-value-annotation
 * https://spring.io/guides/gs/centralized-configuration/
+
+== Module: Docker Volumes & Docker-Compose
+
+* Extend the initial Docker setup to mount a volume from the filesystem outside of the Docker daemon
+* 
+
+image::pics/docker_volumes_images.png
