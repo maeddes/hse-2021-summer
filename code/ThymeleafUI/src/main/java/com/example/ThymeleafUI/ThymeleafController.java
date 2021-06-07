@@ -17,7 +17,6 @@ public class ThymeleafController {
     @Value("${welcome.recipient}")
 	private String message;
 
-	//private List<String> stringList =nt Arrays.asList("one","two","three");
 	private ArrayList<String> todoList;
 
 	@GetMapping("/")
@@ -30,13 +29,9 @@ public class ThymeleafController {
             .bodyToMono(Todo[].class)
             .block();
 
-        todoList = new ArrayList<String>();
-
-        for(int i = 0; i < todos.length; i++)
-            todoList.add(todos[i].getName());
-
 		model.addAttribute("message", message);
-		model.addAttribute("list", todoList);
+
+		model.addAttribute("todos", todos);
 
 		return "page";
 	}
@@ -77,7 +72,6 @@ public class ThymeleafController {
             .retrieve()
             .bodyToMono(Void.class)
             .block();
-
             // WebClient
             // .create("http://localhost:8080/todos/"+oldItem)
             // .delete()
