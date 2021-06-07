@@ -181,6 +181,12 @@ _The student is able to build a Spring Boot application with various configurati
 == Module: Docker Volumes & Docker-Compose
 
 * Extend the initial Docker setup to mount a volume from the filesystem outside of the Docker daemon
-* 
+* Demonstrate behaviour of crashing database setup without and with mounted volume (12 factor)
+* Docker-compose to deploy a multi-container setup
+* Using services, volumes and networks in docker-compose
 
 image::pics/docker_volumes_images.png[Docker Volumes & Docker-Compose]
+
+=== Objectives and exercises
+_The student is able to ... :) _
+
