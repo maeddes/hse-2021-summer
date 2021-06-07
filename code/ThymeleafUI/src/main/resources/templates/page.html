@@ -18,7 +18,15 @@
     <form method="POST" th:action="@{/}">
     <label for="newitem">New list item</label>
     <input type="text" name="newitem" th:value="${newitem}" />
-    <input type="submit" value="Submit!">
+    <input type="submit" value="Add!">
+    </form>
+
+    <br>
+
+    <form method="POST" th:action="@{/delete/}">
+    <label for="olditem">Delete item</label>
+    <input type="text" name="olditem" th:value="${olditem}" />
+    <input type="submit" value="Delete!">
     </form>
 </div>
 
