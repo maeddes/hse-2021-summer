@@ -185,7 +185,7 @@ _The student is able to build a Spring Boot application with various configurati
 * Docker-compose to deploy a multi-container setup
 * Using services, volumes and networks in docker-compose
 
-image::pics/docker_volumes_images.png[Docker Volumes & Docker-Compose]
+image::pics/docker_volumes_compose.png[Docker Volumes & Docker-Compose]
 
 === Objectives and exercises
 _The student is able to ... :) _
