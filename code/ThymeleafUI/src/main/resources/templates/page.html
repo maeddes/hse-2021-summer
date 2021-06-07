@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello World</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+
+<div>
+    <h1>Thymeleaf Hacky Example</h1>
+    <h2>
+        <span th:text="'Hello, ' + ${message}"></span>
+    </h2>
+    <ol>
+        <li th:each="item : ${list}" th:text="${item}"></li>
+    </ol>
+    <form method="POST" th:action="@{/}">
+    <label for="newitem">New list item</label>
+    <input type="text" name="newitem" th:value="${newitem}" />
+    <input type="submit" value="Submit!">
+    </form>
+</div>
+
+</body>

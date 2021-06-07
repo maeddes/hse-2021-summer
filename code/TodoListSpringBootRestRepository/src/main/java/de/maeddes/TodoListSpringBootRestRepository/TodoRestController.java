@@ -28,6 +28,7 @@ public class TodoRestController {
 		return todos;
 	}
 
+	@GetMapping(path = "/{name}", produces = "application/json")
 	Todo getTodo(@PathVariable String name){
 
 		Optional<Todo> optional = todoRepository.findById(name);
