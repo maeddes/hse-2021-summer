@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  app:
+    container_name: peristence-example
+    image: maeddes/persistence-example:v0.1
+    ports: 
+      - 8080:8080
+    environment:
+      SPRING_PROFILES_ACTIVE: postgres
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgresdb:5432/mydb
+    depends_on: 
+      - db
+  db:
+    container_name: postgresdb
+    image: postgres:latest
+    ports: 
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: matthias
+      POSTGRES_DB: mydb
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - /tmp/postgresdata:/var/lib/postgresql/data

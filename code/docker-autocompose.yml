@@ -1,0 +1,30 @@
+version: "3"
+services:
+  persistence-example:
+    container_name: persistence-example
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgresdb:5432/mydb
+    image: maeddes/persistence-example:v0.1
+    networks:
+      - demonet
+    ports:
+      - 8080:8080/tcp
+    depends_on: 
+      - postgresdb
+  postgresdb:
+    container_name: postgresdb
+    environment:
+      - POSTGRES_DB=mydb
+      - PGDATA=/var/lib/postgresql/data/pgdata
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=matthias
+    image: postgres:latest    
+    networks:
+      - demonet
+    ports:
+      - 5432:5432/tcp
+    volumes:
+      - /tmp/postgresdata:/var/lib/postgresql/data
+networks:
+  demonet:
+    external: true

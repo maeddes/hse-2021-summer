@@ -20,7 +20,7 @@ public class JPAController {
     private StringRepository stringRepository;
     private Logger logger = LoggerFactory.getLogger(JPAController.class);
 
-    @GetMapping("/strings")
+    @GetMapping(path = "/strings", produces = "application/json")
 	public String readAllStrings(){
 	
         List<String> listOfStrings = new ArrayList<String>();
