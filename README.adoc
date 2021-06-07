@@ -183,4 +183,4 @@ _The student is able to build a Spring Boot application with various configurati
 * Extend the initial Docker setup to mount a volume from the filesystem outside of the Docker daemon
 * 
 
-image::pics/docker_volumes_images.png
+image::pics/docker_volumes_images.png[Docker Volumes & Docker-Compose]
