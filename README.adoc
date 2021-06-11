@@ -190,3 +190,24 @@ image::pics/docker_volumes_compose.png[Docker Volumes & Docker-Compose]
 === Objectives and exercises
 _The student is able to ... :) _
 
+=== Links:
+
+* https://docs.docker.com/storage/
+* https://docs.docker.com/compose/
+* https://github.com/Red5d/docker-autocompose
+
+
+== Module: Spring WebClient & Thymeleaf UI
+
+
+
+=== Links:
+
+* https://rieckpil.de/spring-webclient-for-restful-communication-setup-and-examples/
+* https://bclozel.github.io/webflux-workshop/
+* https://www.websparrow.org/spring/spring-boot-consuming-a-rest-services-with-webclient
+* https://javatechonline.com/how-to-develop-a-reactive-crud-rest-api-with-spring-webflux/
+* https://www.baeldung.com/spring-5-webclient
+* https://www.baeldung.com/spring-controller-vs-restcontroller
+* https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html
+
