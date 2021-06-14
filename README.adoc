@@ -188,7 +188,7 @@ _The student is able to build a Spring Boot application with various configurati
 image::pics/docker_volumes_compose.png[Docker Volumes & Docker-Compose]
 
 === Objectives and exercises
-_The student is able to ... :) _
+_The student is able to run Docker containers with the option to mount a volume from the file system outside of the scope of the container, which outlives the container lifecycle. He/she is able to run the container independent of each other and also using a multi-container setup with a docker-compose file. Build a docker-compose file with the applications from the previous exercises and run it._
 
 === Links:
 
@@ -196,10 +196,17 @@ _The student is able to ... :) _
 * https://docs.docker.com/compose/
 * https://github.com/Red5d/docker-autocompose
 
-
 == Module: Spring WebClient & Thymeleaf UI
 
+* Build a graphical web UI using Thymeleaf
+* Use WebClient as REST client within an application
+* CRUD operations between applications
+* Connect Thymelead and WebClient functionality
 
+=== Objectives and exercises
+_The student is able to build web UIs using Thymeleaf technologie. This includes steps like displaying dynamic content, iterating over lists and reading input from the web UI. The student understands the WebClient as default REST Client for Spring Boot applications and is able to implement CRUD operations with a REST API. In the exercise combine both technologies to provide a graphical web UI to interact with a REST API of another service._
+
+image::pics/thymeleaf_webclient.png[Thymeleaf & WebClient]
 
 === Links:
 
@@ -211,3 +218,10 @@ _The student is able to ... :) _
 * https://www.baeldung.com/spring-controller-vs-restcontroller
 * https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html
 
+== Module Kotlin
+
+* Comparison to Java
+* var / val
+* Strings
+* Functions
+* Lambdas

@@ -72,6 +72,7 @@ public class ThymeleafController {
             .retrieve()
             .bodyToMono(Void.class)
             .block();
+            
             // WebClient
             // .create("http://localhost:8080/todos/"+oldItem)
             // .delete()
