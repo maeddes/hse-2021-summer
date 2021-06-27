@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: hsedemo
+  name: hsedemo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hsedemo
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: hsedemo
+    spec:
+      containers:
+      - image: maeddes/kubernetes-demo:v0.3
+        name: kubernetes-demo
+        resources: {}
+status: {}

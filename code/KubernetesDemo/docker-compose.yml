@@ -1,0 +1,7 @@
+version: "3.9"  
+services:
+  app:
+    container_name: k8s-example
+    image: maeddes/kubernetes-demo:v0.1
+    ports:
+      - 8080:8080
