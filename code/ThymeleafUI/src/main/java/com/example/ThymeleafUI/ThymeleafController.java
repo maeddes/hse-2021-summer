@@ -17,13 +17,16 @@ public class ThymeleafController {
     @Value("${welcome.recipient}")
 	private String message;
 
+    @Value("${todolist.endpoint}")
+	private String todolistEndpoint;
+
 	private ArrayList<String> todoList;
 
 	@GetMapping("/")
 	public String displayPage(Model model){
 
         Todo[] todos = WebClient
-            .create("http://localhost:8080/todos/")
+            .create(todolistEndpoint)
             .get()
             .retrieve()
             .bodyToMono(Todo[].class)
@@ -53,7 +56,7 @@ public class ThymeleafController {
 		System.out.println("New item: "+newitem);
 
         WebClient
-            .create("http://localhost:8080/todos/"+newitem)
+            .create(todolistEndpoint+newitem)
             .post()
             .retrieve()
             .bodyToMono(Todo.class)
@@ -67,7 +70,7 @@ public class ThymeleafController {
 
 		System.out.println("Ol to delete  item: "+olditem);
         WebClient
-            .create("http://localhost:8080/todos/"+olditem)
+            .create(todolistEndpoint+olditem)
             .delete()
             .retrieve()
             .bodyToMono(Void.class)
